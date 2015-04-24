@@ -129,15 +129,8 @@
             }).ToList();
         }
 
-        static NameValueCollection parse(string str)
-        {
-            return HttpUtility.ParseQueryString(str);
-        }
-
-        static string decode(string str)
-        {
-            return HttpUtility.HtmlDecode(str);
-        }
+        static string decode(string str) { return HttpUtility.HtmlDecode(str); }
+        static NameValueCollection parse(string str) { return HttpUtility.ParseQueryString(str); }
 
         static string Download(string videoInfoUrl)
         {
