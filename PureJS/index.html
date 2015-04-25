@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<body>
+    <div ng-controller="WelcomeController">
+        {{greeting}}
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script>
+        var app = angular.module('demo', []);
+
+        app.controller('WelcomeController', ["$scope", "$http", function ($scope, $http) {
+
+            var uri = "http://w3schools.com/my test.asp?name=ståle&car=saab";
+            var uri_enc = encodeURIComponent(uri);
+            var uri_dec = decodeURIComponent(uri_enc);
+
+            var res = uri_enc;
+
+
+            $scope.greeting = uri_enc;
+
+            
+
+
+            $http.get("http://www.youtube.com/get_video_info?video_id=IJ5u-2EH_1g").then(function (response) {
+                $scope.greeting = response.data;
+            });
+
+
+        }]);
+
+        angular.bootstrap(document, ['demo']);
+    </script>
+</body>
+</html>

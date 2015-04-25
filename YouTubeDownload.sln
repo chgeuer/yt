@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YouTubeDownload", "YouTubeD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8D51B008-376D-4409-AFC8-F2601B194A7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PureJS", "PureJS\PureJS.csproj", "{8ABD1B33-298C-4D29-90E7-E8D699465C18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABD1B33-298C-4D29-90E7-E8D699465C18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABD1B33-298C-4D29-90E7-E8D699465C18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABD1B33-298C-4D29-90E7-E8D699465C18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABD1B33-298C-4D29-90E7-E8D699465C18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
