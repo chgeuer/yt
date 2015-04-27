@@ -6,6 +6,7 @@
     using System.IO;
     using System.Linq;
     using System.Net;
+    using System.Net.Http;
     using System.Security.Policy;
     using System.Text;
     using System.Threading.Tasks;
@@ -222,6 +223,13 @@
         public static string Download(string videoId)
         {
             var videoInfoUrl = string.Format("http://www.youtube.com/get_video_info?video_id={0}", videoId);
+
+            var client = new HttpClient();
+            var requestMessage = new HttpRequestMessage(HttpMethod.Get, new Uri(videoInfoUrl));
+            requestMessage.Headers.Add("X-Forwarded-For", "187.72.88.32");
+            var httpResponse = client.SendAsync(requestMessage).Result;
+            var x = httpResponse.Content.ReadAsStringAsync().Result;
+
 
             var request = (HttpWebRequest)WebRequest.Create(videoInfoUrl);
             var response = (HttpWebResponse)(request.GetResponse());
