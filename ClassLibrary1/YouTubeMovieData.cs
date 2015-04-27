@@ -91,10 +91,30 @@
         public string watermark { get; set; }
         
         #endregion
+        public string reason { get; set; }
 
-        public string Title { get; set; }
-        public string Reason { get; set; }
         public List<Video> Videos { get; set; }
+
+        public Video GetVideoByITag(IEnumerable<int> itags)
+        {
+            var video = itags
+                .Select(itag => this.Videos.FirstOrDefault(_ => _.itag == itag))
+                .FirstOrDefault(_ => _ != null);
+
+            return video;
+        }
+
+        public Video PreferredVideo
+        {
+            get
+            {
+                return this.GetVideoByITag(new[] {
+                    22, // hd720 - mp4
+                    18, // medium - mp4
+                    43 // medium - webm
+                });
+            }
+        }
 
         public class Video
         {
@@ -194,9 +214,8 @@
             this.watermark = infoParsed["watermark"];
             #endregion
 
-            this.Title = infoParsed["title"];
-            this.Reason = infoParsed.ContainsKey("reason") ? infoParsed["reason"] : null;
-            this.Videos = infoParsed["url_encoded_fmt_stream_map"].Split(',').Select(data => new Video(data, Title)).ToList();
+            this.reason = infoParsed.ContainsKey("reason") ? infoParsed["reason"] : null;
+            this.Videos = infoParsed["url_encoded_fmt_stream_map"].Split(',').Select(data => new Video(data, this.title)).ToList();
         }
 
 
