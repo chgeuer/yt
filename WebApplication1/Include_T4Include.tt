@@ -1,0 +1,10 @@
+<#
+	RootPath    = "https://notinuse";
+	Namespace   = "notinuse";
+	Includes    = new []
+	{
+		Include (@"https://raw.githubusercontent.com/prabirshrestha/simple-owin/master/src/SimpleOwin.Middlewares/Helpers/HttpUtility.cs", noOuterNamespace: true),
+		Include (@"https://raw.githubusercontent.com/prabirshrestha/simple-owin/master/src/SimpleOwin.Middlewares/Helpers/HttpEncoder.cs", noOuterNamespace: true)
+	};
+#>
+<#@ include file="$(SolutionDir)\packages\T4Include.1.1.4\T4\IncludeWebFile.ttinclude" #>

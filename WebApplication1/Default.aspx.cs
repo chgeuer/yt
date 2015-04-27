@@ -129,8 +129,16 @@
             }).ToList();
         }
 
-        static string decode(string str) { return HttpUtility.HtmlDecode(str); }
-        static NameValueCollection parse(string str) { return HttpUtility.ParseQueryString(str); }
+        //static string decode(string str) { return HttpUtility.HtmlDecode(str); }
+        //static NameValueCollection parse(string str) { return HttpUtility.ParseQueryString(str); }
+
+        static string decode(string str) { return SimpleOwin.Middlewares.Helpers.HttpUtility.HtmlDecode(str); }
+        static NameValueCollection parse(string str) { return SimpleOwin.Middlewares.Helpers.HttpUtility.ParseQueryString(str); }
+
+
+
+        
+
 
         static string Download(string videoInfoUrl)
         {
