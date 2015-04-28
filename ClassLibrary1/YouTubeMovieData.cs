@@ -230,7 +230,6 @@
             var httpResponse = client.SendAsync(requestMessage).Result;
             var x = httpResponse.Content.ReadAsStringAsync().Result;
 
-
             var request = (HttpWebRequest)WebRequest.Create(videoInfoUrl);
             var response = (HttpWebResponse)(request.GetResponse());
             var responseStream = response.GetResponseStream();
