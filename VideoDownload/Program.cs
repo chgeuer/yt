@@ -18,7 +18,8 @@
                 //"https://www.youtube.com/watch?v=VQAAkO5B5Hg+",
                 //"https://www.youtube.com/watch?v=Q5POuMHxW-0",
                 //"https://www.youtube.com/watch?v=pts6F00GFuU",
-                "https://www.youtube.com/watch?v=hSoQ_Cyse2A"
+                // "https://www.youtube.com/watch?v=hSoQ_Cyse2A"
+                "https://www.youtube.com/watch?v=SGUpT-a99MA"
             };
 
             addresses.ToList().ForEach(D);
@@ -67,7 +68,7 @@
 
             Console.WriteLine("Download {0}", video.Url.AbsoluteUri);
 
-            // webClient.DownloadFile(video.Url, path);
+            webClient.DownloadFile(video.Url, path);
         }
     }
 
@@ -255,7 +256,7 @@
             this.of = infoParsed["of"];
             this.plid = infoParsed["plid"];
             this.pltype = infoParsed["pltype"];
-            this.probe_url = infoParsed["probe_url"];
+            // this.probe_url = infoParsed["probe_url"];
             this.ptk = infoParsed["ptk"];
             this.status = infoParsed["status"];
             this.storyboard_spec = infoParsed["storyboard_spec"];
