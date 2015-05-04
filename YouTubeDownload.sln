@@ -3,15 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8D51B008-376D-4409-AFC8-F2601B194A7D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCApp", "MVCApp\MVCApp.csproj", "{4BB2F586-228F-429C-99BF-FEF2C2009BFB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Downloader", "Downloader\Downloader.csproj", "{9700A65C-1C5A-480B-8658-839BDE2B3DD1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoDownload", "VideoDownload\VideoDownload.csproj", "{4AD0FFA7-0145-4D42-A0D9-FB8CD742C5D9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{9EF96CBC-696A-4941-AAEB-8C084C326159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadGui", "DownloadGui\DownloadGui.csproj", "{F705DAE7-897D-414F-92FB-13425BE80272}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,18 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D51B008-376D-4409-AFC8-F2601B194A7D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BB2F586-228F-429C-99BF-FEF2C2009BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB2F586-228F-429C-99BF-FEF2C2009BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB2F586-228F-429C-99BF-FEF2C2009BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB2F586-228F-429C-99BF-FEF2C2009BFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9700A65C-1C5A-480B-8658-839BDE2B3DD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9700A65C-1C5A-480B-8658-839BDE2B3DD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9700A65C-1C5A-480B-8658-839BDE2B3DD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9700A65C-1C5A-480B-8658-839BDE2B3DD1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4AD0FFA7-0145-4D42-A0D9-FB8CD742C5D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AD0FFA7-0145-4D42-A0D9-FB8CD742C5D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AD0FFA7-0145-4D42-A0D9-FB8CD742C5D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +23,10 @@ Global
 		{9EF96CBC-696A-4941-AAEB-8C084C326159}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EF96CBC-696A-4941-AAEB-8C084C326159}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EF96CBC-696A-4941-AAEB-8C084C326159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F705DAE7-897D-414F-92FB-13425BE80272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F705DAE7-897D-414F-92FB-13425BE80272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F705DAE7-897D-414F-92FB-13425BE80272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F705DAE7-897D-414F-92FB-13425BE80272}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
